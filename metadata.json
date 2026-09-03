@@ -1,0 +1,6 @@
+{
+  "name": "FarmPro",
+  "description": "AI-powered, market-driven crop recommendation platform that matches farm agronomics with market opportunity and weather conditions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
