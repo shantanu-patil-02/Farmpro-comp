@@ -72,20 +72,16 @@ async function startServer() {
     });
   });
 
-  // Client SPA Serving (Vite middleware in dev, static files in production)
+  // Client SPA Serving only during local development
   if (process.env.NODE_ENV !== 'production' && !process.env.TEST_MODE) {
     const { createServer: createViteServer } = await import('vite');
+
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
     });
+
     app.use(vite.middlewares);
-  } else if (process.env.NODE_ENV === 'production') {
-    const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
   }
 
   return new Promise((resolve, reject) => {
