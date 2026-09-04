@@ -17,15 +17,14 @@ export default function Subscription() {
       id: 'BASIC',
       planName: 'BASIC',
       displayName: 'Kisan Basic',
-      price: billingCycle === 'monthly' ? '₹199' : '₹1,499',
-      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹889)',
+      price: billingCycle === 'monthly' ? '₹99' : '₹1,100',
+      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹88)',
       description: 'Essential seasonal crop intelligence and regional mandi price forecasts for smallholders.',
       features: [
         'Up to 25 full crop recommendations per season',
         'APMC Mandi price forecast & modal averages',
         '6-Factor agronomic soil suitability engine',
-        'Local 5-day weather & climate risk alerts',
-        'Community farmer feedback & crop tips'
+        
       ],
       isPopular: false,
       isCurrent: currentPlanNormalized === 'BASIC'
@@ -34,16 +33,15 @@ export default function Subscription() {
       id: 'INTERMEDIATE',
       planName: 'INTERMEDIATE',
       displayName: 'FarmPro Intermediate',
-      price: billingCycle === 'monthly' ? '₹399' : '₹2,999',
-      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹1,789)',
+      price: billingCycle === 'monthly' ? '₹199' : '₹2200',
+      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹200)',
       description: 'Most popular choice for commercial farmers seeking maximum ROI and supply shortage alerts.',
       features: [
-        'Unlimited seasonal crop audits & recommendations',
+        '50 seasonal crop audits & recommendations',
         'Live Mandi supply shortage & deficit indexes',
         'AI Kisan Advisor (Gemini 3.7) 24/7 assistant',
         'Detailed Farm Profit & Cost-of-Cultivation simulator',
-        'NPK fertilizer & soil amendment suggestions',
-        'Multi-language audio & voice support'
+        
       ],
       isPopular: true,
       isCurrent: currentPlanNormalized === 'INTERMEDIATE' || currentPlanNormalized === 'PRO'
@@ -52,15 +50,13 @@ export default function Subscription() {
       id: 'ADVANCE',
       planName: 'ADVANCE',
       displayName: 'FPO & Enterprise Advance',
-      price: billingCycle === 'monthly' ? '₹799' : '₹5,999',
-      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹3,589)',
+      price: billingCycle === 'monthly' ? '₹599' : '₹5,999',
+      period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹1,189)',
       description: 'Comprehensive agri-intelligence suite for large landholders, FPOs, and custom soil labs.',
       features: [
+        'Unlimited seasonal crop audits & recommendations',
         'All Intermediate features with priority AI compute',
         'Multi-farm management up to 500 acres',
-        'Custom soil lab spectrometer / report import',
-        'Direct APMC trader liquidity & buyer matching',
-        'Exportable PDF agronomy sheets for bank loans',
         'Dedicated agronomist phone helpline support'
       ],
       isPopular: false,
@@ -158,9 +154,7 @@ export default function Subscription() {
           </button>
           <span className={`text-xs font-bold cursor-pointer flex items-center gap-1.5 ${billingCycle === 'yearly' ? 'text-emerald-800' : 'text-slate-400'}`} onClick={() => setBillingCycle('yearly')}>
             <span>Annual Billing</span>
-            <span className="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-extrabold border border-emerald-200">
-              Save ~25%
-            </span>
+            
           </span>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { Sprout, Mail, Lock, ArrowRight, UserCheck, ShieldCheck, Loader2, AlertC
 import { useFarm } from '../context/FarmContext.jsx';
 
 export default function Login() {
-  const [email, setEmail] = useState('farmer@farmpro.ai');
-  const [password, setPassword] = useState('password123');
+  const [email, setEmail] = useState(' ');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -34,8 +34,8 @@ export default function Login() {
   const handleQuickDemo = async (type) => {
     setIsLoading(true);
     setErrorMsg('');
-    const demoEmail = type === 'farmer' ? 'farmer@farmpro.ai' : 'balwinder@punjabkisanfpo.org';
-    const demoPass = 'password123';
+    const demoEmail = type === 'farmer' ? 'farmer@farmpro.ai' : 'shantanu@gmail.com';
+    const demoPass = 'shantanu';
     setEmail(demoEmail);
     setPassword(demoPass);
 
@@ -88,7 +88,7 @@ export default function Login() {
               className="py-1.5 px-2 text-[11px] font-bold rounded-lg bg-slate-900 hover:bg-slate-800 disabled:opacity-50 text-white transition flex items-center justify-center gap-1 shadow-2xs cursor-pointer"
             >
               <ShieldCheck className="w-3 h-3" />
-              <span>Balwinder (FPO)</span>
+              <span>Shantanu</span>
             </button>
           </div>
         </div>

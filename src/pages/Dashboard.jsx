@@ -120,9 +120,9 @@ export default function Dashboard() {
           {topCrop && <CropCard item={topCrop} rank={1} />}
         </div>
 
-        <div>
+        {/* <div>
           <WeatherCard />
-        </div>
+        </div> */}
       </div>
 
       {/* Recent History Table */}

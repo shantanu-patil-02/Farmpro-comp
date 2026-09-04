@@ -9,15 +9,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
           
           {/* Col 1: Brand */}
-          <div className="space-y-3 md:col-span-1">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 font-bold shadow-xs">
-                <Sprout className="w-4 h-4 text-emerald-950" />
-              </div>
-              <span className="text-lg font-bold text-white tracking-tight">
-                Farm<span className="text-amber-400">Pro</span>
-              </span>
-            </div>
+          <div className="space-y-3 md:col-span-1"> 
+  <div className="flex items-center gap-2.5"> 
+    <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center shadow-xs overflow-hidden"> 
+      <img
+        src="/farmpro_icon2.png"
+        alt="FarmPro"
+        className="w-full h-full object-contain"
+      />
+    </div> 
+    <span className="text-lg font-bold text-white tracking-tight"> 
+      Farm<span className="text-amber-400">Pro</span> 
+    </span> 
+  </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Empowering Indian farmers with dual-pillar crop intelligence: matching farm agronomics with real-time APMC mandi demand, buffer stocks, and price trends.
             </p>
@@ -48,11 +52,7 @@ export default function Footer() {
                   Top 5 Recommendations
                 </Link>
               </li>
-              <li>
-                <Link to="/market-insights" className="text-slate-400 hover:text-emerald-400 transition">
-                  Mandi Market Insights
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/dashboard" className="text-slate-400 hover:text-emerald-400 transition">
                   Farmer Dashboard
@@ -103,7 +103,7 @@ export default function Footer() {
             <div className="p-3 rounded-lg bg-slate-800/80 border border-slate-700/60">
               <div className="flex items-center gap-2 text-amber-400 font-bold text-xs">
                 <Phone className="w-3.5 h-3.5" />
-                <span>Kisan Call Centre: 1800-180-1551</span>
+                <span>Kisan Call Centre: 1800-180-xxxx</span>
               </div>
               <p className="text-[11px] text-slate-400 mt-1">
                 Toll-free agricultural technical support (6 AM - 10 PM)

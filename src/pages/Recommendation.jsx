@@ -40,7 +40,7 @@ export default function Recommendation() {
 
           {/* Context & Agronomic Tips Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <WeatherCard />
+            {/* <WeatherCard /> */}
 
             <div className="bg-white rounded-xl p-5 border border-slate-200 shadow-sm space-y-3">
               <h4 className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5">
@@ -56,10 +56,10 @@ export default function Recommendation() {
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong>Water Realism:</strong> Pick 'Low' if dependent solely on monsoon rains to prevent recommendations of water-exhaustive crops.</span>
                 </li>
-                <li className="flex items-start gap-2">
+                {/* <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong>Farming Objective:</strong> Choose 'Low Risk' to enforce strict MSP protection floors or 'Maximum Profit' for high-upside pulses/spices.</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -213,7 +213,7 @@ export default function Results() {
         </div>
 
         {/* Top Pick Recommendation Formula Breakdown */}
-        {top5[0] && (
+        {/* {top5[0] && (
           <div className="mt-6">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">
@@ -232,7 +232,7 @@ export default function Results() {
               rawScore={top5[0].rawScore}
             />
           </div>
-        )}
+        )} */}
       </section>
 
       {/* 6 RECHARTS ANALYTICAL CHARTS SUITE */}
@@ -441,13 +441,13 @@ export default function Results() {
       </section>
 
       {/* WHY NOT ANALYSIS & PROFIT SIMULATOR */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <WhyNotAnalysis 
           cautionedCrops={cautioned} 
           onOpenDeepDive={(c) => setSelectedCropModal(c)}
         />
         <FarmProfitCalculator topPick={top5[0]} />
-      </div>
+      </div> */}
 
       {/* WAS THIS RECOMMENDATION USEFUL? FEEDBACK FORM */}
       <RecommendationFeedback 

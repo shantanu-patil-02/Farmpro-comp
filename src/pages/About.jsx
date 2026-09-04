@@ -65,7 +65,7 @@ export default function About() {
               <Sprout className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 font-heading">
-              Pillar 1: Biological & Agronomic Feasibility (40%)
+              Pillar 1: Biological & Agronomic Feasibility 
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               We analyze soil texture (Alluvial, Black Soil, Red, Loam), soil pH, NPK nutrient reserves, water availability (Rainfed vs Borewell), and crop cycle duration to ensure the crop has optimal agronomic growth conditions.
@@ -77,7 +77,7 @@ export default function About() {
               <TrendingUp className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 font-heading">
-              Pillar 2: Mandi Economics & Buffer Shortage (45%)
+              Pillar 2: Mandi Economics & Buffer Shortage 
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               We cross-examine real-time mandi buffer stock deficits, crushing mill demand, projected harvest wholesale rates, and Government MSP safety nets. If a crop is in supply surplus, our algorithm flags a glut risk.
@@ -87,7 +87,7 @@ export default function About() {
       </div>
 
       {/* Team / Vision */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-4">
+      {/* <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-4">
         <div className="flex items-center gap-2.5">
           <HeartHandshake className="w-5 h-5 text-emerald-700" />
           <h3 className="text-base font-bold text-slate-900 font-heading">
@@ -107,7 +107,7 @@ export default function About() {
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
-      </div>
+      </div> */}
 
     </div>
   );

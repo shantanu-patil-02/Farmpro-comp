@@ -168,7 +168,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
           )}
 
           {/* Demo Presets Dropdown */}
-          <div className="flex items-center gap-1.5">
+          {/* <div className="flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
             <select
               onChange={(e) => handleApplyPreset(e.target.value)}
@@ -181,7 +181,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
                 </option>
               ))}
             </select>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -251,7 +251,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
               type="number"
               min="0.5"
               max="500"
-              step="0.5"
+              step="0.1"
               required
               value={formData.landArea}
               onChange={(e) => handleChange('landArea', e.target.value)}
@@ -304,7 +304,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
         </div>
 
         {/* Field 6: Soil Nitrogen (N) */}
-        <div>
+        {/* <div>
           <label className="font-bold text-slate-700 flex items-center justify-between mb-1">
             <span className="flex items-center gap-1.5">
               <FlaskConical className="w-3.5 h-3.5 text-emerald-600" />
@@ -321,10 +321,10 @@ export default function RecommendationForm({ onSubmitSuccess }) {
             placeholder="e.g. 140"
             className="w-full px-3 py-2 rounded-lg border border-slate-300 text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-700"
           />
-        </div>
+        </div> */}
 
         {/* Field 7: Soil Phosphorus (P) */}
-        <div>
+        {/* <div>
           <label className="font-bold text-slate-700 flex items-center justify-between mb-1">
             <span className="flex items-center gap-1.5">
               <FlaskConical className="w-3.5 h-3.5 text-amber-600" />
@@ -341,10 +341,10 @@ export default function RecommendationForm({ onSubmitSuccess }) {
             placeholder="e.g. 35"
             className="w-full px-3 py-2 rounded-lg border border-slate-300 text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-700"
           />
-        </div>
+        </div> */}
 
         {/* Field 8: Soil Potassium (K) */}
-        <div>
+        {/* <div>
           <label className="font-bold text-slate-700 flex items-center justify-between mb-1">
             <span className="flex items-center gap-1.5">
               <FlaskConical className="w-3.5 h-3.5 text-rose-600" />
@@ -361,7 +361,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
             placeholder="e.g. 210"
             className="w-full px-3 py-2 rounded-lg border border-slate-300 text-slate-900 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-700"
           />
-        </div>
+        </div> */}
 
         {/* Field 9: Soil pH */}
         <div>
@@ -383,7 +383,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
         </div>
 
         {/* Field 10: Farming Objective */}
-        <div>
+        {/* <div>
           <label className="font-bold text-slate-700 flex items-center gap-1.5 mb-1">
             <Target className="w-3.5 h-3.5 text-emerald-700" />
             <span>{t('form.farmingObjective', 'Farming Objective')} *</span>
@@ -399,7 +399,7 @@ export default function RecommendationForm({ onSubmitSuccess }) {
             <option value="Short Duration">{t('form.objCash', 'Short Duration Cash Flow')}</option>
             <option value="Long Duration">Long Duration (High Aggregate Yield)</option>
           </select>
-        </div>
+        </div> */}
 
         {/* Field 11: Previous Crop */}
         <div>

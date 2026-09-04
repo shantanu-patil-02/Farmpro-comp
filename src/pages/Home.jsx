@@ -59,19 +59,20 @@ export default function Home() {
               <span>{t('home.ctaPrimary', 'Run Crop Recommendation')}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
-
-            <Link
+          
+            
+            {/* <Link
               to="/market-insights"
               id="hero-explore-market-btn"
               className="py-3.5 px-6 rounded-xl bg-emerald-900/80 hover:bg-emerald-800 text-emerald-100 hover:text-white border border-emerald-700/80 text-xs sm:text-sm font-bold transition flex items-center justify-center gap-2"
             >
               <BarChart3 className="w-4 h-4 text-emerald-400" />
-              <span>{t('home.ctaSecondary', 'Explore Mandi Insights')}</span>
-            </Link>
+              <span>{t('home.ctaSecondary')}</span>
+            </Link> */}
           </div>
 
           {/* Trust badges */}
-          <div className="pt-4 flex flex-wrap items-center gap-4 text-[11px] text-emerald-300 border-t border-emerald-800/80">
+          {/* <div className="pt-4 flex flex-wrap items-center gap-4 text-[11px] text-emerald-300 border-t border-emerald-800/80">
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
               {t('home.statMandis', '1,400+ APMC Mandis')}
@@ -84,7 +85,7 @@ export default function Home() {
               <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
               {t('home.statAccuracy', '94.2% Predictive Score')}
             </span>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -305,7 +306,7 @@ export default function Home() {
       </section>
 
       {/* 6. FARMER-FRIENDLY DASHBOARD PREVIEW */}
-      <section className="space-y-6" id="dashboard-preview-section">
+      {/* <section className="space-y-6" id="dashboard-preview-section">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
           <div>
             <span className="text-[11px] uppercase font-bold text-emerald-700 tracking-wider">
@@ -338,7 +339,7 @@ export default function Home() {
             </div>
           </div>
         )}
-      </section>
+      </section> */}
 
       {/* FINAL BOTTOM CTA */}
       <section className="rounded-3xl bg-amber-400 text-emerald-950 p-8 sm:p-12 text-center space-y-4 shadow-lg">

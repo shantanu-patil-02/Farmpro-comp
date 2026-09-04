@@ -79,11 +79,11 @@ export default function CropCard({ item, rank = 1, onOpenDeepDive }) {
                 )}
               </div>
               <div className="flex items-center gap-1.5 flex-wrap mt-0.5">
-                <span className="text-xs text-slate-500">
+                {/* <span className="text-xs text-slate-500">
                   {crop.localName || 'Regional Crop'} • <span className="capitalize">{crop.category}</span>
-                </span>
+                </span> */}
                 <span className="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-slate-100 text-slate-700 border border-slate-200">
-                  {opportunity}
+                  {/* {opportunity} */}
                 </span>
               </div>
             </div>
@@ -156,26 +156,26 @@ export default function CropCard({ item, rank = 1, onOpenDeepDive }) {
         </div>
 
         {/* Recommendation Reason */}
-        <div className="p-2.5 rounded-lg bg-emerald-50/50 border border-emerald-100 text-xs mb-3">
+        {/* <div className="p-2.5 rounded-lg bg-emerald-50/50 border border-emerald-100 text-xs mb-3">
           <span className="font-bold text-emerald-950 text-[10px] uppercase tracking-wider block">
             Why FarmPro Recommends:
           </span>
           <p className="text-emerald-900 text-[11px] leading-relaxed mt-0.5 line-clamp-2">
             {recommendationReason}
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Action Footer: Link to Crop Details + Profit Estimator */}
       <div className="pt-2 flex items-center justify-between gap-2 border-t border-slate-100 flex-wrap">
         <div className="flex items-center gap-2 text-[11px] text-slate-500">
-          <span>Risk: <strong className="text-slate-800">{climateRisk}</strong></span>
+          {/* <span>Risk: <strong className="text-slate-800">{climateRisk}</strong></span> */}
           <span>•</span>
           <span>Seed: <strong className="text-slate-800">₹{Number(seedCost).toLocaleString('en-IN')}/ac</strong></span>
         </div>
 
         <div className="flex items-center gap-2">
-          {onOpenDeepDive && (
+          {/* {onOpenDeepDive && (
             <button
               type="button"
               onClick={() => onOpenDeepDive(item)}
@@ -183,7 +183,7 @@ export default function CropCard({ item, rank = 1, onOpenDeepDive }) {
             >
               Quick Breakdown
             </button>
-          )}
+          )} */}
 
           <Link
             to={`/crop/${crop.id || item.cropId || crop.name?.toLowerCase().replace(/\s+/g, '-')}`}

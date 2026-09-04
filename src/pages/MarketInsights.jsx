@@ -87,17 +87,17 @@ export default function MarketInsights() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Link
+          {/* <Link
             to="/recommendation"
             className="px-4 py-2 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold shadow-sm transition"
           >
             {t('dashboard.newRecommendation', 'Apply to My Farm')}
-          </Link>
+          </Link> */}
         </div>
       </div>
 
       {/* Market Intelligence Bulletins / Mandi Ticker */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs space-y-1">
           <div className="flex items-center gap-1.5 font-bold text-emerald-950">
             <TrendingUp className="w-3.5 h-3.5 text-emerald-700" />
@@ -127,10 +127,10 @@ export default function MarketInsights() {
             Government buffer procurement active for Chickpea (Chana) and Moong; minimum support prices guaranteed at APMC gates.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Chart Section */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6 space-y-4">
+      {/* <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
           <div>
             <h3 className="text-base font-bold text-slate-900 font-heading">
@@ -164,11 +164,11 @@ export default function MarketInsights() {
           type={chartView}
           height={260}
         />
-      </div>
+      </div> */}
 
       {/* Filter and Search Bar */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-        <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0 scrollbar-none">
+        {/* <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0 scrollbar-none">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -183,7 +183,7 @@ export default function MarketInsights() {
               {cat}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="relative w-full sm:w-64">
           <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />

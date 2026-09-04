@@ -299,7 +299,7 @@ export default function CropDetails() {
       </div>
 
       {/* Weather Context */}
-      <WeatherCard />
+      {/* <WeatherCard /> */}
 
     </div>
   );

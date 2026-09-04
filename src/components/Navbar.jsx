@@ -48,17 +48,21 @@ export default function Navbar() {
           
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center text-emerald-950 font-extrabold shadow-sm group-hover:scale-105 transition-transform">
-              <Sprout className="w-5 h-5 text-emerald-950" />
-            </div>
+           <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+            <img
+              src="\farmpro_icon2.png"
+              alt="FarmPro"
+              className="w-full h-full object-contain"
+            />
+          </div>
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="text-xl font-bold tracking-tight text-white font-heading">
                   {t('nav.brandName', 'FarmPro')}
                 </span>
-                <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-emerald-800/80 text-emerald-200 border border-emerald-700/60 hidden sm:inline-block">
+                {/* <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-emerald-800/80 text-emerald-200 border border-emerald-700/60 hidden sm:inline-block">
                   {t('nav.badgeMarketFirst', 'Market First')}
-                </span>
+                </span> */}
               </div>
               <p className="text-[10px] text-emerald-300 font-medium -mt-0.5 hidden xs:block">
                 {t('nav.tagline', 'Plant Smarter. Sell Better.')}
