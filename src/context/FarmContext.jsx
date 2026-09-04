@@ -174,34 +174,24 @@ export function FarmProvider({ children }) {
 
   // Check auth session on startup
   useEffect(() => {
-    async function initSession() {
-      setIsAuthLoading(true);
-      setAuthError(null);
+  async function initSession() {
+    setIsAuthLoading(true);
+    setAuthError(null);
 
-      const token = typeof window !== 'undefined' ? localStorage.getItem('farmpro_token') : null;
+    const token =
+      typeof window !== 'undefined'
+        ? localStorage.getItem('farmpro_token')
+        : null;
 
-      if (!token) {
-        // Default to a pre-authenticated demo farmer for smooth sandbox evaluation
-        const demoUser = {
-          id: 'user_default_1',
-          _id: 'user_default_1',
-          name: 'Ramesh Patil',
-          email: 'farmer@farmpro.ai',
-          phone: '+91 98234 56789',
-          language: 'en',
-          role: 'farmer',
-          subscriptionPlan: 'FREE',
-          freeRecommendationsUsed: 0,
-          createdAt: '2025-03-01T00:00:00.000Z',
-        };
-        setUser(demoUser);
-        setSubscriptionPlan(demoUser.subscriptionPlan || 'FREE');
-        setFreeRecommendationsUsed(demoUser.freeRecommendationsUsed || 0);
-        setFarmProfile(DEFAULT_FARM_PROFILE);
-        syncFormWithFarmProfile(DEFAULT_FARM_PROFILE);
-        setIsAuthLoading(false);
-        return;
-      }
+    if (!token) {
+      setUser(null);
+      setFarmProfile(DEFAULT_FARM_PROFILE);
+      syncFormWithFarmProfile(DEFAULT_FARM_PROFILE);
+      setIsAuthLoading(false);
+      return;
+    }
+
+    
 
       try {
         const res = await authAPI.getMe();
