@@ -127,3 +127,111 @@ Farmpro-ad
 └─ vite.config.ts
 
 ```
+```
+Farmpro-ad
+├─ bun.lock
+├─ client
+│  └─ src
+│     └─ i18n
+│        ├─ en.js
+│        ├─ hi.js
+│        └─ mr.js
+├─ index.html
+├─ metadata.json
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ farmpro_icon2.png
+├─ README.md
+├─ server
+│  ├─ config
+│  │  └─ db.js
+│  ├─ middleware
+│  │  └─ auth.js
+│  ├─ models
+│  │  ├─ Crop.js
+│  │  ├─ Farm.js
+│  │  ├─ Feedback.js
+│  │  ├─ Recommendation.js
+│  │  └─ User.js
+│  ├─ routes
+│  │  ├─ aiRoutes.js
+│  │  ├─ authRoutes.js
+│  │  ├─ cropRoutes.js
+│  │  ├─ farmRoutes.js
+│  │  ├─ feedbackRoutes.js
+│  │  ├─ marketRoutes.js
+│  │  ├─ recommendationRoutes.js
+│  │  ├─ subscriptionRoutes.js
+│  │  └─ weatherRoutes.js
+│  ├─ seed.js
+│  ├─ server.js
+│  ├─ services
+│  │  ├─ geminiService.js
+│  │  ├─ marketService.js
+│  │  ├─ recommendationService.js
+│  │  └─ weatherService.js
+│  ├─ test-endpoints.js
+│  └─ utils
+│     ├─ cropScoring.js
+│     ├─ cropScoring.test.js
+│     └─ seed.js
+├─ src
+│  ├─ App.jsx
+│  ├─ components
+│  │  ├─ AIChat.jsx
+│  │  ├─ CropCard.jsx
+│  │  ├─ CropDeepDiveModal.jsx
+│  │  ├─ DataSourceBadge.jsx
+│  │  ├─ FarmConditionsForm.jsx
+│  │  ├─ FarmProfitCalculator.jsx
+│  │  ├─ FeedbackForm.jsx
+│  │  ├─ Footer.jsx
+│  │  ├─ LanguageSelector.jsx
+│  │  ├─ LoadingSpinner.jsx
+│  │  ├─ MarketChart.jsx
+│  │  ├─ MarketIntelligenceView.jsx
+│  │  ├─ Navbar.jsx
+│  │  ├─ PriceChart.jsx
+│  │  ├─ ProtectedRoute.jsx
+│  │  ├─ RecommendationCard.jsx
+│  │  ├─ RecommendationFeedback.jsx
+│  │  ├─ RecommendationForm.jsx
+│  │  ├─ ScoreBreakdown.jsx
+│  │  ├─ SubscriptionCard.jsx
+│  │  ├─ WeatherCard.jsx
+│  │  └─ WhyNotAnalysis.jsx
+│  ├─ context
+│  │  └─ FarmContext.jsx
+│  ├─ data
+│  │  ├─ cropDatabase.js
+│  │  └─ regionalPresets.js
+│  ├─ i18n
+│  │  ├─ en.js
+│  │  ├─ hi.js
+│  │  ├─ index.jsx
+│  │  └─ mr.js
+│  ├─ index.css
+│  ├─ main.jsx
+│  ├─ pages
+│  │  ├─ About.jsx
+│  │  ├─ CropDetails.jsx
+│  │  ├─ Dashboard.jsx
+│  │  ├─ Feedback.jsx
+│  │  ├─ History.jsx
+│  │  ├─ Home.jsx
+│  │  ├─ Login.jsx
+│  │  ├─ MarketInsights.jsx
+│  │  ├─ NotFound.jsx
+│  │  ├─ Profile.jsx
+│  │  ├─ Recommendation.jsx
+│  │  ├─ Register.jsx
+│  │  ├─ Results.jsx
+│  │  └─ Subscription.jsx
+│  └─ services
+│     ├─ apiClient.js
+│     └─ recommendationEngine.js
+├─ tsconfig.json
+└─ vite.config.ts
+
+```
