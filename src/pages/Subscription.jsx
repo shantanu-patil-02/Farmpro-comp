@@ -21,7 +21,7 @@ export default function Subscription() {
       period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹88)',
       description: 'Essential seasonal crop intelligence and regional mandi price forecasts for smallholders.',
       features: [
-        'Up to 25 full crop recommendations per season',
+        'Up to 5 full crop recommendations per season',
         'APMC Mandi price forecast & modal averages',
         '6-Factor agronomic soil suitability engine',
         
@@ -37,7 +37,7 @@ export default function Subscription() {
       period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹200)',
       description: 'Most popular choice for commercial farmers seeking maximum ROI and supply shortage alerts.',
       features: [
-        '50 seasonal crop audits & recommendations',
+        '10 seasonal crop audits & recommendations',
         'Live Mandi supply shortage & deficit indexes',
         'AI Kisan Advisor (Gemini 3.7) 24/7 assistant',
         'Detailed Farm Profit & Cost-of-Cultivation simulator',
@@ -54,7 +54,7 @@ export default function Subscription() {
       period: billingCycle === 'monthly' ? '/month' : '/year (Save ₹1,189)',
       description: 'Comprehensive agri-intelligence suite for large landholders, FPOs, and custom soil labs.',
       features: [
-        'Unlimited seasonal crop audits & recommendations',
+        '15 seasonal crop audits & recommendations',
         'All Intermediate features with priority AI compute',
         'Multi-farm management up to 500 acres',
         'Dedicated agronomist phone helpline support'
